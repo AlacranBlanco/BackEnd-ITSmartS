@@ -82,6 +82,7 @@ const loginUsuario = async (req, res = response) => {
     }
 }
 
+// Este método nos sirve para renovar el token cada vez que el usaurio lo requiera
 const revalidarToken = async (req, res = response) => {
     
     const { usuario } = req;

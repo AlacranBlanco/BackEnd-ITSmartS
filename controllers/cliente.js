@@ -104,6 +104,7 @@ const eliminarCliente = async (req, res = response) => {
 
 const getClientes = async (req, res = response) => {
    try {
+       // Simple método que retorna una lista de clientes
        const data =  await Cliente.find();
        res.status(200).json(data);
    } catch (error) {
@@ -116,6 +117,7 @@ const getClientes = async (req, res = response) => {
 const getClienteById = async (req, res = response) => {
         const _id = req.params.id;
     try {
+        // Retorna al usuario consultado
         const data =  await Cliente.findById({_id});
         res.status(200).json(data);
     } catch (error) {
