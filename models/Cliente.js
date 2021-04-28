@@ -39,6 +39,10 @@ const ClienteSchema = Schema({
     viewportY: {
         type: Number,
         require: true
+    },
+    image: {
+        type: String,
+        require: true
     }
 
 })
